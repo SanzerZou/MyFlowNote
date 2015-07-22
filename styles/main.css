@@ -19,6 +19,7 @@ body {
 }
 .mid-wrap {
 	background: #ffffff;
+	color: #666666;
 	width: 400px;
 	height: 100%;
 	float: left;
@@ -38,9 +39,15 @@ body {
 }
 
 .title {
+	height: 30%;
+	position: relative;
+}
+h1 {
+	position: absolute;
+	top: 70px;
+	margin: 0 20px;
 	font-size: 3em;
 	text-align: center;
-	margin: 50px 0;
 }
 .book-list {
 	font-size: 1.3em;
@@ -57,8 +64,9 @@ body {
 	margin: 30px auto 0;
 	height: 40px;
 	width: 40px;
-	border-radius: 10px;
-	background: #666666;
+	border-radius: 5px;
+	background: #666666 url(../img/add.png) no-repeat center;
+	background-size:40px 40px;
 }
 /*bnt:删除笔记本按钮*/
 .del-book {
@@ -67,8 +75,65 @@ body {
 	height: 40px;
 	width: 40px;
 	border-radius: 5px;
-	background: #666666;
+	background: #666666 url(../img/del.png) no-repeat center;
 	position: absolute;
 	bottom: 50px;
 	right: 50px;
+}
+.new-note {
+	font-size: 0.5em;
+	font-weight: normal;
+	background: #da3610;
+	color: #fff;
+	padding: 5px 10px;
+	border-radius: 3px;
+	margin-left: 20px;
+}
+.note-list ul {
+	padding: 0 10px;
+}
+.note-item {
+	background: #f6f6f6;
+	border-radius: 5px;
+	padding: 8px;
+	margin-bottom: 10px;
+	line-height: 1.3em;
+}
+.note-item h3 {
+	font-size: 1.2em;
+	margin: 3px 0;
+}
+.note-item p {
+	font-size: 1.2em;
+	margin: 3px 0;
+}
+.right-content .title {
+	background: #da3610;
+}
+
+.del-note {
+	width: 50px;
+	height: 50px;
+	background: url(../img/cha.png) no-repeat center;
+	position: absolute;
+	top: 30px;
+	right: 30px;
+}
+.note-title {
+	margin-right: 100px;
+	color:#fdfdfd;
+	text-align: left;
+	line-height: 1.2em;
+}
+.note-content {
+  box-sizing:border-box;
+  -moz-box-sizing:border-box; /* Firefox */
+  -webkit-box-sizing:border-box; /* Safari */
+  display: block;
+  padding: 20px;
+  height: 70%;
+  width:100%;
+  font-size: 1.3em;
+  box-shadow: none;
+  border-radius: none;
 }
